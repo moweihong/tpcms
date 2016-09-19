@@ -6,6 +6,19 @@
 <link rel="stylesheet" type="text/css" href="/Public/home/css/style.css" />
 <script type="text/javascript" src="/Public/home/js/jquery-1.6.min.js"></script>
 <script type="text/javascript" src="/Public/home/js/index.js"></script>
+<style>
+table {
+ border-collapse: collapse; 
+ margin-top: 20px;
+} 
+table td,th{
+    border:1px solid bisque;
+}
+.usertable
+{
+	background: darkgrey;
+}
+</style>
 </head>
 
 <body>
@@ -18,7 +31,7 @@
 </div>
 <div class="nav-down">
 	<div class="leftmenu1">
-        <div class="menu-oc"><img src="images/menu-all.png" /></div>
+        <div class="menu-oc"><img src="/Public/home/images/menuall.png" /></div>
     	<ul>
         	<li>
             	<a class="a_list a_list1">全局设置</a>
@@ -59,7 +72,7 @@
         </ul>
     </div>
     <div class="leftmenu2">
-    	<div class="menu-oc1"><img src="images/menu-all.png" /></div>
+    	<div class="menu-oc1"><img src="/Public/home/images/menuall.png" /></div>
         <ul>
         	<li>
             	<a class="j_a_list j_a_list1"></a>

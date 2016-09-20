@@ -1,0 +1,56 @@
+1.tp_user_admin:
+u_id 主键
+user_name 用户名
+password  密码
+time	  创建时间
+is_delete 是否删除
+
+
+2.tp_user_menu:菜单栏
+m_id  主键
+memu_name 栏目名称
+url	  地址
+parentmid 栏目父id
+sort	   排序
+is_delte  是否删除
+
+3.tp_admin_menu_relation:用户表与菜单表关联
+am_id  主键
+u_id 用户表关联id或用户组id
+m_id 菜单表关联id
+is_delete 是否删除
+type      类型（0代表用户1代表用户组）
+
+
+4.tp_user_group:用户组表
+g_id:主键
+g_anme 组名
+is_delete 是否删除
+
+5.tp_admin_group_relation 用户与组关联
+id 主键
+u_id 用户表关联id
+g_id 用户组关联id
+is_delete 是否解除关系
+
+6.tp_user_permission权限表
+p_id 主键
+p_name	名称
+desc 权限描述
+is_delete 是否删除
+
+7.tp_adminmenu_permission_relation 用户表与菜单表关联的表与权限表关系
+id 主键
+am_id 用户表与菜单表关联的表id
+p_id  权限表id
+is_delete 是否解除关系
+
+
+
+
+
+
+
+
+
+

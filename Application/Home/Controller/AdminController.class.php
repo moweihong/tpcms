@@ -4,8 +4,8 @@ use Think\Controller;
 class AdminController extends Controller {
    public function login()
    {
-   		$_POST['username']='mowei';
-		$_POST['pass']='123456';
+// 		$_POST['username']='mowei';
+//		$_POST['pass']='123456';
    		if(!empty($_POST)&&isset($_POST))
    		{
 			$res=D('User')->checkAdmin($_POST);
@@ -14,6 +14,9 @@ class AdminController extends Controller {
 			{
 				 session('admin_username',$res['username']);
 			}
+			
+			echo json_encode($res);exit;
+			
    		}
 	   	$res=D('User')->getAdmin();
 		$this->display();

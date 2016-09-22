@@ -1,7 +1,7 @@
 <?php
 namespace Home\Model;
 use Think\Model;
-class UserModel extends Model
+class UserModel extends BaseModel
 {
 	protected $tableName='user_admin';
 	
@@ -18,13 +18,13 @@ class UserModel extends Model
 			if($res['pass']==$data['password'])
 			{
 				$result['code']=1;
-				$result['mess']='success';
+				$result['message']='success';
 				$result['username']=$data['username'];
 			}
 			else
 			{
 				$result['code']=0;
-				$result['mess']='pass is error';
+				$result['message']='pass is error';
 				$result['username']='';
 			}
 			
@@ -32,10 +32,15 @@ class UserModel extends Model
 		else
 		{
 			$result['code']=0;
-			$result['mess']='username is not esixt';
+			$result['message']='username is not esixt';
 			$result['username']='';
 		}
 		return $result;
+	}
+	
+	public function addAdmin($data)
+	{
+		$this->in
 	}
    
 }

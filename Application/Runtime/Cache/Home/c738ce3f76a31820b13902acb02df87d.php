@@ -42,9 +42,17 @@
 		    	var pass=$('#loginPass').val();
 		    	$.post('/admin/login',{'username':username,'pass':pass},function(data)
 		    	{
-		    		alert(data);
+		    		var data=eval('('+data+')');
+		    		if(data.code==0)
+		    		{
+		    			alert(data.message);
+		    		}
+		    		else
+		    		{
+		    			window.location.href='/index/index'
+		    		}
 		    	})
-		    	alert(username);
+		    	
 		    })
 		</script>
     </body>

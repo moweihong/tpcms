@@ -18,6 +18,10 @@ table td,th{
 {
 	background: darkgrey;
 }
+.bodycont
+{
+	
+}
 </style>
 </head>
 
@@ -111,6 +115,7 @@ table td,th{
 	 <div class="rightcon">
     	<div class="right_con" style="margin-left: 50px;">
         	<table class="usertable">
+        		<button id='addUser'>新增</button>
         		<th width="15%">id</th>
         		<th width="15%">用户名</th>
         		<th width="15%">所属组</th>
@@ -133,6 +138,9 @@ table td,th{
 </div>
 </body>
 </html>
-<script type="text/javascript">
-	
-</script>
+
+	<script>
+		$('#addUser').click(function(){
+			alert(11111);
+		})
+	</script>>
